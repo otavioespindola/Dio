@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aling Content</title>
+
+<style>
+    .container {
+        height: 400px;
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid
+    }
+
+    .item{
+        background-color: orangered;
+        padding: 0 5px;
+        margin: 5px;
+        flex: 1;
+        text-align: center;
+        color: white;
+    }
+    .strech {
+        align-content: stretch;
+    }
+
+    .center {
+        align-content: center;
+    }
+    .start {
+        align-content: flex-start;
+    }
+
+    .end {
+        align-content: flex-end;
+    }
+    .space_around{
+        align-content: space-around;
+    }
+    .space_between {
+        align-content: space-between ;
+    }
+</style>
+
+</head>
+<body>
+    <p>strech</p>
+    <div class="container strech">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio suscipit eligendi </div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elitLorem ipsum dolor sit, </div>
+        <div class="item">nam magnam ratio repellat veritatis laboriosam.</div>
+        <div class="item">onsectetur adipisicing et consectetur</div>
+        <div class="item">psum dolor sit, amet consectetur</div>
+        <div class="item">amet consectetur adipisicing elit</div>
+    </div>
+    
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio suscipit eligendi </div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elitLorem ipsum dolor sit, </div>
+        <div class="item">nam magnam ratio repellat veritatis laboriosam.</div>
+        <div class="item">onsectetur adipisicing et consectetur</div>
+        <div class="item">psum dolor sit, amet consectetur</div>
+        <div class="item">amet consectetur adipisicing elit</div>
+    </div>
+   
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elitLorem ipsum dolor sit, </div>
+        <div class="item">nam magnam ratio repellat veritatis laboriosam.</div>
+        <div class="item">onsectetur adipisicing et consectetur</div>
+        <div class="item">psum dolor sit, amet consectetur</div>
+        <div class="item">amet consectetur adipisicing elit</div>
+    </div>
+    
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elitLorem ipsum dolor sit, </div>
+        <div class="item">nam magnam ratio repellat veritatis laboriosam.</div>
+        <div class="item">onsectetur adipisicing et consectetur</div>
+        <div class="item">psum dolor sit, amet consectetur</div>
+        <div class="item">amet consectetur adipisicing elit</div>
+    </div>
+   
+    <p>space-around</p>
+    <div class="container space_around">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elitLorem ipsum dolor sit, </div>
+        <div class="item">nam magnam ratio repellat veritatis laboriosam.</div>
+        <div class="item">onsectetur adipisicing et consectetur</div>
+        <div class="item">psum dolor sit, amet consectetur</div>
+        <div class="item">amet consectetur adipisicing elit</div>
+    </div>
+    <p>space-between</p>
+    <div class="container space_between">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elitLorem ipsum dolor sit, </div>
+        <div class="item">nam magnam ratio repellat veritatis laboriosam.</div>
+        <div class="item">onsectetur adipisicing et consectetur</div>
+        <div class="item">psum dolor sit, amet consectetur</div>
+        <div class="item">amet consectetur adipisicing elit</div>
+    </div>
+
+</body>
+</html>
