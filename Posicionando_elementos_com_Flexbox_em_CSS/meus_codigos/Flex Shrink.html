@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrink</title>
+
+    <style>
+        .flex_container {
+            border: 1px solid;
+            display: flex;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+        .item {
+            background-color: orangered;
+            font-size: 24px;
+            margin: 5px;
+            text-align: center;
+        }
+        .s_1{
+            flex-shrink: 1;
+        }
+        .s_0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .fg_1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>flex-shrin 1</p>
+    <div class="flex_container">
+        <div class="item fg_1 s_1">A</div>
+        <div class="item fg_1 s_1">B</div>
+        <div class="item fg_1 s_1">C</div>
+        <div class="item fg_1 s_1">D</div>
+        <div class="item fg_1 s_1">E</div>
+    </div>
+    <div class="flex_container">
+        <div class="item fg_1 s_1">A</div>
+        <div class="item fg_1 s_1">Lorem ipsum cogito ergo </div>
+        <div class="item fg_1 s_1">C</div>
+        <div class="item fg_1 s_1">D</div>        
+    </div>
+    <p>flex-shrink 0 - basis 100px</p>
+    <div class="flex_container">
+        <div class="item fg_1 s_0">A</div>
+        <div class="item fg_1 s_0">Lorem ipsum cogito ergo </div>
+        <div class="item fg_1 s_0">Lorem ipsum </div>
+        <div class="item fg_1 s_0">D</div>        
+    </div>
+
+</body>
+</html>
