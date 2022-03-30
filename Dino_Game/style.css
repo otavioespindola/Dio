@@ -42,3 +42,11 @@ body {
     height: 200px;
     width: 100%;
 }
+
+.rain {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    background-color: rgba(58, 58, 146, 0.233);
+    bottom: 1000;
+}
