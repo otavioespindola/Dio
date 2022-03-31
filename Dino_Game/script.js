@@ -67,8 +67,8 @@ document.addEventListener('keyup', handleKeyUp);
 
 function createRain() {
     const rain = document.createElement('div');
-    let randomRainTime = Math.random() * 50;
-    let rainBottomPosition = 2000;
+    let randomRainTime = Math.random() * 20;
+    let rainBottomPosition = 800;
 
     rain.classList.add('rain');
     rain.style.left = Math.random() * 1200 + "px";
