@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { Book } from './model/Book';
 import { BookService } from './product-list.component.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { BookService } from './product-list.component.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-
+  
   livros: any;
   bookService: BookService;
 
@@ -18,14 +19,8 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
     this.livros = this.bookService.getBook().subscribe((data) => {
       this.livros = data;
-      console.log(this.livros)
     } )
-
   }
-
-
-
 }

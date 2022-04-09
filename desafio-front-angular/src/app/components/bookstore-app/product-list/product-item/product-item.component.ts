@@ -8,9 +8,7 @@ import { Book } from '../model/Book';
 })
 
 
-export class ProductItemComponent implements OnInit {
- 
-  url: string = "";
+export class ProductItemComponent implements OnInit { 
 
   @Input()
   livro!: Book;
@@ -18,6 +16,7 @@ export class ProductItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
